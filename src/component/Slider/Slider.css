@@ -1,0 +1,24 @@
+.slick-dots {
+    bottom: 40px !important;
+}
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 14px !important;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    /* opacity: 0.4 !important; */
+    color: var(--white) !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.row {
+    background-color: initial !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}

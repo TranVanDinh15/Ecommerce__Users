@@ -1,0 +1,135 @@
+.wrapperProduct {
+    z-index: 10;
+}
+.Product__Item__box__title {
+    margin: 40px 80px;
+    padding: 0 15px;
+    border-left: 3px solid var(--white);
+    span {
+        color: var(--white);
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
+.wrapper__cart {
+    margin: 0 77px;
+    border-radius: initial;
+}
+// .Product__Item__box {
+//     display: flex;
+// }
+.wrapper__cart__Item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.wrapper__cart__SortHeading {
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 5px;
+}
+.buttonProduct {
+    // border: none;
+    border-radius: initial;
+}
+.Product__Container {
+    margin: 0 77px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    background-color: var(--white);
+}
+.cardProductShow {
+    margin-bottom: 20px;
+    border: none;
+    img {
+        transition: all linear 1s;
+        animation: changerImage linear 1s;
+        height: 250px;
+    }
+}
+@keyframes changerImage {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.footerBtn {
+    display: flex;
+    justify-content: space-between;
+    button {
+        // width: 200px;
+        background-color: #05092f;
+        color: var(--white);
+        border: none;
+        svg {
+            margin-right: 4px;
+        }
+    }
+}
+.footerBtn__setting {
+    svg {
+        margin-right: 0 !important;
+    }
+}
+.cardProductShow__name {
+    display: block;
+    display: -webkit-box;
+    height: 16px * 1.3 * 2;
+    font-size: 16px;
+    line-height: 1.3;
+    -webkit-line-clamp: 2; /* số dòng hiển thị */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 10px;
+}
+.PriceBox {
+    span {
+        font-size: 14px;
+        font-weight: 700;
+        color: red;
+    }
+}
+.footerBtn__setting {
+    position: relative;
+}
+.footerBtn__setting__btn {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: -107px;
+    left: 0;
+    right: 0;
+    transition: all linear 1s;
+    transform-origin: bottom;
+    animation: settingShow ease 0.4s;
+    .footerBtn__setting {
+        margin-bottom: 4px;
+    }
+}
+@keyframes settingShow {
+    from {
+        transform: scaleY(0);
+    }
+    to {
+        transform: scaleY(1);
+    }
+}
+.listPrice {
+    .buttonProduct {
+        display: flex;
+        justify-content: left;
+        background-color: initial;
+        border: none;
+        width: 100%;
+        padding: 10px;
+        &:hover {
+            background-color: var(--white);
+            color: #05092f;
+        }
+    }
+}
